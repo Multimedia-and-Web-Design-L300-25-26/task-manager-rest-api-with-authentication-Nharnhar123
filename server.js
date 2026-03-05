@@ -4,6 +4,12 @@ import connectDB from "./src/config/db.js";
 
 dotenv.config();
 
+// validate required env vars
+if (!process.env.JWT_SECRET) {
+  console.error("JWT_SECRET must be set in .env");
+  process.exit(1);
+}
+
 const PORT = process.env.PORT || 5000;
 
 // Connect to MongoDB

@@ -29,6 +29,8 @@ MONGO_URI=your_mongodb_connection_string
 JWT_SECRET=your_secret_key
 ```
 
+> ⚠️ **Important:** The app will refuse to start if `MONGO_URI` or `JWT_SECRET` are missing. Make sure these values are set correctly before running the server.
+
 Do not commit the `.env` file to version control.
 
 ---
