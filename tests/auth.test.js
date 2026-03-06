@@ -1,7 +1,5 @@
 import request from "supertest";
-import app from "./setup.js";
-
-// ensure test environment variables are loaded
+import app from "../src/app.js";
 
 describe("Auth Routes", () => {
 
